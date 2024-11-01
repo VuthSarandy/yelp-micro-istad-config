@@ -4,6 +4,9 @@ business:
     description: "Business API"
     version: "1.0.0"
 
+server:
+  port: 8081
+
 spring:
   jpa:
     hibernate:
