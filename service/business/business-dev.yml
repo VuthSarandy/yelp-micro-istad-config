@@ -1,0 +1,5 @@
+business:
+  info:
+    name: "Business Dev"
+    description: "Business API"
+    version: "1.0.0"
