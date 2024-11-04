@@ -1,0 +1,6 @@
+user-profile:
+  info:
+    name: "User-profile Prod"
+    description: "User-profile API"
+    version: "1.0.0"
+

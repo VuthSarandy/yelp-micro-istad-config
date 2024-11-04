@@ -1,0 +1,6 @@
+notification:
+  info:
+    name: "Notification Prod"
+    description: "Notification API"
+    version: "1.0.0"
+

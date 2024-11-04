@@ -1,0 +1,6 @@
+identity:
+  info:
+    name: "Identity Prod"
+    description: "Identity API"
+    version: "1.0.0"
+

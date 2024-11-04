@@ -1,0 +1,5 @@
+restaurant:
+  info:
+    name: "Restaurant qa"
+    description: "Restaurant API"
+    version: "1.0.0"

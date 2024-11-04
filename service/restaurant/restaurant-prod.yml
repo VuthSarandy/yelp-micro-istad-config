@@ -1,0 +1,6 @@
+restaurant:
+  info:
+    name: "Restaurant Prod"
+    description: "Restaurant API"
+    version: "1.0.0"
+

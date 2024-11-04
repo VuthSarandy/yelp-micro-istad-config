@@ -1,0 +1,6 @@
+product:
+  info:
+    name: "Product Prod"
+    description: "Product API"
+    version: "1.0.0"
+

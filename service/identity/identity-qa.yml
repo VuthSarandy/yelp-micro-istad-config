@@ -1,0 +1,5 @@
+identity:
+  info:
+    name: "Identity qa"
+    description: "Identity API"
+    version: "1.0.0"

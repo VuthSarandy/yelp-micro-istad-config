@@ -1,0 +1,7 @@
+server:
+  port: 8086
+
+spring:
+  data:
+    mongodb:
+      url: mongodb://sarandy:123@34.101.79.242:1690/notification

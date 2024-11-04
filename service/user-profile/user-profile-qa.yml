@@ -1,0 +1,5 @@
+user-profile:
+  info:
+    name: "User-profile qa"
+    description: "User-profile API"
+    version: "1.0.0"

@@ -1,18 +1,18 @@
-business:
+user-profile:
   info:
-    name: "Business Dev"
-    description: "Business API"
+    name: "User-profile Dev"
+    description: "User-profile API"
     version: "1.0.0"
 
 server:
-  port: 8081
+  port: 8082
 
 spring:
   jpa:
     hibernate:
       ddl-auto: create-drop
   datasource:
-    url: jdbc:postgresql://34.101.79.242:5431/business
+    url: jdbc:postgresql://34.101.79.242:5431/user-profile
     username: sarandy
     password: 123
     driver-class-name: org.postgresql.Driver
