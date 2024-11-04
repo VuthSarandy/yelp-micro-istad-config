@@ -1,0 +1,18 @@
+service-ms:
+  info:
+    name: "Service-ms Dev"
+    description: "Service-ms API"
+    version: "1.0.0"
+
+server:
+  port: 8081
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    url: jdbc:postgresql://34.101.79.242:5431/service
+    username: sarandy
+    password: 123
+    driver-class-name: org.postgresql.Driver

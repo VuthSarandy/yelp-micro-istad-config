@@ -1,0 +1,6 @@
+business:
+  info:
+    name: "Business Prod"
+    description: "Business API"
+    version: "1.0.0"
+
