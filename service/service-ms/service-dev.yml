@@ -5,7 +5,7 @@ service-ms:
     version: "1.0.0"
 
 server:
-  port: 8081
+  port: 8087
 
 spring:
   jpa:
