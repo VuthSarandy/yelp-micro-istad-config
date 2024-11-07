@@ -34,7 +34,7 @@ spring.security:
           require-authorization-consent: true
 
 spring.datasource:
-  url: jdbc:postgresql://34.50.93.104:5430/oauth2
+  url: jdbc:postgresql://34.101.79.242:5430/oauth2
   username: sarandy
   password: 123
   driver-class-name: org.postgresql.Driver
