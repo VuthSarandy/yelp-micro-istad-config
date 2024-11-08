@@ -1,54 +1,82 @@
-spring.jpa:
-  generate-ddl: true
-  hibernate:
-    ddl-auto: create-drop
-  properties:
-    hibernate:
-      show_sql: true
-      format_sql: true
+# spring.jpa:
+#   generate-ddl: true
+#   hibernate:
+#     ddl-auto: create-drop
+#   properties:
+#     hibernate:
+#       show_sql: true
+#       format_sql: true
 
-spring.security:
-  oauth2:
-    authorizationserver:
-      client:
-        oidc-client:
-          registration:
-            client-id: "oidc-client"
-            client-secret: "$2a$12$vsisQLhmU9H.LlpR4sLNO.41lUk0fiici62lJaLebEquJLIpzedWy"
-            client-authentication-methods:
-              - "client_secret_post"
-              - "client_secret_basic"
-            authorization-grant-types:
-              - "authorization_code"
-              - "refresh_token"
-              - "client_credentials"
-            redirect-uris:
-              - "http://127.0.0.1:9000/login/oauth2/code/oidc-client"
-            post-logout-redirect-uris:
-              - "http://127.0.0.1:9000/"
-            scopes:
-              - "openid"
-              - "profile"
-              - "email"
-              - "address"
-          require-authorization-consent: true
+# spring.security:
+#   oauth2:
+#     authorizationserver:
+#       client:
+#         oidc-client:
+#           registration:
+#             client-id: "oidc-client"
+#             client-secret: "$2a$12$vsisQLhmU9H.LlpR4sLNO.41lUk0fiici62lJaLebEquJLIpzedWy"
+#             client-authentication-methods:
+#               - "client_secret_post"
+#               - "client_secret_basic"
+#             authorization-grant-types:
+#               - "authorization_code"
+#               - "refresh_token"
+#               - "client_credentials"
+#             redirect-uris:
+#               - "http://127.0.0.1:9000/login/oauth2/code/oidc-client"
+#             post-logout-redirect-uris:
+#               - "http://127.0.0.1:9000/"
+#             scopes:
+#               - "openid"
+#               - "profile"
+#               - "email"
+#               - "address"
+#           require-authorization-consent: true
 
-spring.datasource:
-  url: jdbc:postgresql://34.101.79.242:5430/oauth2
-  username: sarandy
-  password: 123
-  driver-class-name: org.postgresql.Driver
+# spring.datasource:
+#   url: jdbc:postgresql://34.101.79.242:5430/oauth2
+#   username: sarandy
+#   password: 123
+#   driver-class-name: org.postgresql.Driver
+
+# server:
+#   port: 9000
+#   servlet:
+#     context-path: /identity
+
+# # eureka:
+# #   instance:
+# #     preferIpAddress: true
+# #   client:
+# #     fetchRegistry: true
+# #     registerWithEureka: true
+# #     serviceUrl:
+# #       defaultZone: http://localhost:8989/eureka/
 
 server:
-  port: 9000
-  servlet:
-    context-path: /identity
+  port: 9090
 
-# eureka:
-#   instance:
-#     preferIpAddress: true
-#   client:
-#     fetchRegistry: true
-#     registerWithEureka: true
-#     serviceUrl:
-#       defaultZone: http://localhost:8989/eureka/
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    url: jdbc:postgresql://http://34.101.79.242:5430/oauth2
+    username: sarandy
+    password: 123
+    driver-class-name: org.postgresql.Driver
+  servlet:
+    multipart:
+      max-request-size: 10MB
+      max-file-size: 10MB
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: it.chhaya@gmail.com
+    password: duuf wtgf nobv hggc
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
